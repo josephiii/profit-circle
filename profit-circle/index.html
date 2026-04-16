@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Profit Circle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="chart-atmosphere"></div>
+<div class="scan-line"></div>
+<div class="footprint-rain" id="footprintRain"></div>
+<div class="grid-overlay"></div>
+<div class="grain"></div>
+
+<div class="meta-bar">
+  <div><span class="dot"></span>NQ · E-MINI NASDAQ-100 · LIVE</div>
+  <div>EST. 2026</div>
+</div>
+
+<div class="container">
+
+  <section class="hero">
+    <div class="eyebrow">Private Mentorship</div>
+    <h1>The Profit Circle</h1>
+    <p class="tagline">Proven Strategy<span class="divider"></span>1-on-1 Mentorship<span class="divider"></span>24/7 Support</p>
+
+    <button class="apply-btn" id="applyBtn">
+      <span>Apply to Join</span>
+      <span class="arrow">→</span>
+    </button>
+  </section>
+
+  <div class="content-frame">
+
+  <div class="section-mark">· Testimonials ·</div>
+
+  <section class="testimonials-wrap">
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="track">
+
+        <div class="testimonial">
+          <img src="images/test1.png" alt="Member testimonial" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;color:var(--ink-dim);font-family:JetBrains Mono,monospace;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;&quot;>Slide 01 — Replace with testimonials/1.png</div>';" />
+        </div>
+
+        <div class="testimonial">
+          <img src="images/test2.png" alt="Member testimonial" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;color:var(--ink-dim);font-family:JetBrains Mono,monospace;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;&quot;>Slide 02 — Replace with testimonials/2.png</div>';" />
+        </div>
+
+        <div class="testimonial">
+          <img src="images/test3.png" alt="Member testimonial" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;color:var(--ink-dim);font-family:JetBrains Mono,monospace;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;&quot;>Slide 03 — Replace with testimonials/3.png</div>';" />
+        </div>
+
+        <div class="testimonial">
+          <img src="images/test4.png" alt="Member testimonial" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;color:var(--ink-dim);font-family:JetBrains Mono,monospace;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;&quot;>Slide 04 — Replace with testimonials/4.png</div>';" />
+        </div>
+
+      </div>
+
+      <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M15 6l-6 6 6 6"/>
+        </svg>
+      </button>
+      <button class="carousel-arrow next" id="nextBtn" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M9 6l6 6-6 6"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="carousel-counter">
+      <div id="counterText">01 / 04</div>
+      <div class="counter-dots" id="dots"></div>
+      <div>Real Success</div>
+    </div>
+  </section>
+
+  </div> <!-- /testimonials-frame -->
+
+  <div class="content-frame discord-frame">
+  <section class="discord-section">
+    <div class="discord-label">Community Access</div>
+    <h2 class="discord-heading">Join the Traders' Discord</h2>
+    <a href="https://discord.gg/profitcircle" class="discord-btn" target="_blank" rel="noopener">
+      <span>Enter the Server</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M5 12h14M13 6l6 6-6 6"/>
+      </svg>
+    </a>
+  </section>
+
+  </div> <!-- /discord-frame -->
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="disclaimer-label">§ Legal Notice</div>
+    <p class="disclaimer">
+      <strong>Disclaimer:</strong> I am NOT a financial advisor. Nothing on this page or in this mentorship constitutes financial advice, investment advice, or a solicitation to buy or sell any securities. All trading involves substantial risk of loss and is not suitable for all investors. Past performance is not indicative of future results. Results shown are not guaranteed. Individual results will vary based on experience, dedication, market conditions, capital, and other factors. Only trade with money you can afford to lose. Always do your own research before making any financial decision.
+    </p>
+    <div class="copyright">
+      <span>© 2026 · The Profit Circle</span>
+      <span>All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">CLOSE ✕</button>
+    <div class="modal-eyebrow">Application · Step 01</div>
+    <h3 class="modal-title">Request an Invitation</h3>
+    <p class="modal-body">The Circle is a small, deliberate group. Tell us who you are and where you're headed - we'll review and respond within 48 hours.</p>
+    <div class="modal-placeholder">*TypeForm link here</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
